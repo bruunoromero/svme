@@ -4,7 +4,7 @@
       <ion-toolbar>
         <ion-title>Home</ion-title>
         <ion-buttons slot="end">
-          <ion-button slot="icon-only">
+          <ion-button slot="icon-only" @click="openModal">
             <ion-icon name="add"></ion-icon>
           </ion-button>
         </ion-buttons>
