@@ -1,0 +1,6 @@
+{
+  "appId": "br.com.brunoromero",
+  "appName": "svme",
+  "bundledWebRuntime": false,
+  "webDir": "dist"
+}

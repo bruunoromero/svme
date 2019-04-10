@@ -13,11 +13,7 @@
 
     <ion-content>
       <ion-list v-for="transaction of transactions" :key="transaction.id">
-        <transaction-card
-          :name="transaction.name"
-          :value="transaction.value"
-          :createdAt="transaction.createdAt.toDate()"
-        />
+        <transaction-card v-bind="transaction"/>
       </ion-list>
     </ion-content>
   </ion-page>

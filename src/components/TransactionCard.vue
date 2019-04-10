@@ -6,7 +6,7 @@
       </ion-card-header>
       <ion-card-content>
         <div>{{value}}</div>
-        <div>{{createdAt}}</div>
+        <div>{{createdAt.toDate()}}</div>
       </ion-card-content>
     </ion-card>
   </ion-list-item>
@@ -14,11 +14,7 @@
 
 <script>
 export default {
-  props: {
-    name: String,
-    value: Number,
-    createdAt: Date
-  }
+  props: ["name", "value", "createdAt"]
 };
 </script>
 
