@@ -12,13 +12,13 @@
             v-if="isIos"
             @click="pop"
           >
-            Close
+            {{$t('header.close')}}
           </ion-button>
         </ion-buttons>
         <ion-title>Create</ion-title>
         <ion-buttons slot="end">
           <ion-button fill="clear">
-            Save
+            {{$t('header.save')}}
           </ion-button>
         </ion-buttons>
       </ion-toolbar>

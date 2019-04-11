@@ -4,7 +4,10 @@
       <ion-toolbar>
         <ion-title>Home</ion-title>
         <ion-buttons slot="end">
-          <ion-button slot="icon-only" @click="openModal">
+          <ion-button
+            slot="icon-only"
+            @click="openModal"
+          >
             <ion-icon name="add"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -12,8 +15,11 @@
     </ion-header>
 
     <ion-content>
-      <ion-list v-for="transaction of transactions" :key="transaction.id">
-        <transaction-card v-bind="transaction"/>
+      <ion-list
+        v-for="transaction of transactions"
+        :key="transaction.id"
+      >
+        <transaction-card v-bind="transaction" />
       </ion-list>
     </ion-content>
   </ion-page>
